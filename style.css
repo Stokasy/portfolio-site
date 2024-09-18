@@ -2,16 +2,12 @@
     box-sizing: border-box;
 }
 aside{
-    width: 19%;
     float:left;
 }
 aside2{
-    width:23%;
     float:right;
-    overflow: hidden
 }
 section{
-    width:90%;
     float:center;
 }
 section h1{
@@ -55,32 +51,24 @@ img, video{
 #asideimg{
     padding-left: 20px;
     margin: 0px;
-    left: 20px;
-    top: 230px;
     width:  380px;
     height: 350px;
 }
 #asideimg2{
-    padding-right: 65px;
+    padding-right: 20px;
     margin: 0px;
-    width: 380px;
+    width: 350px;
     height: 350px;
 }
 #twitch{
     margin: 0px;
-    top: 4.5%;
-    left: 40%;
-    width: 45px;
+    width: 40px;
     height: 40px;
-    padding-right: 5px;
 }
 #github{
     margin: 0px;
-    top: 4.5%;
-    right: 40%;
-    width: 45px;
+    width: 40px;
     height: 40px;
-    padding-left: 5px;
 }
 #active{
     border: solid 4px;
@@ -153,7 +141,8 @@ img, video{
 .container{
     display:flex;
     justify-content: center;
-    margin: 25px
+    margin: 25px;
+    column-gap: 5px;
 }
 @media screen and (max-width:1000px){
     aside, section, article{
