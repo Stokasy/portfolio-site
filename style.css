@@ -19,6 +19,15 @@ header{
 nav{
     font-size: 23px;
 }
+a{
+    color: darkmagenta
+}
+a:hover{
+    color: rgb(109, 3, 109);
+}
+img, video{
+    margin: 10px;
+}
 footer{
     display: block;
     clear: both;
@@ -32,15 +41,6 @@ body, pre{
 h1, h2, p, pre, label, dd{
     color: white;
     width: 50%;
-}
-a{
-    color: darkmagenta
-}
-a:hover{
-    color: rgb(109, 3, 109);
-}
-img, video{
-    margin: 10px;
 }
 #title{
     text-shadow: 5px 5px 3px darkmagenta;
@@ -70,6 +70,10 @@ img, video{
     width: 40px;
     height: 40px;
 }
+#downloadlabel{
+    color: darkmagenta;
+    font-weight: bold;
+}
 #active{
     border: solid 4px;
     border-radius: 10px;
@@ -78,11 +82,10 @@ img, video{
     font-weight: bold;
 }
 #active:hover{
-    background-color: rgb(72, 67, 72);
-}
-.downloadlabel{
-    color: darkmagenta;
-    font-weight: bold;
+    animation-name: hoverActiveBorder;
+    animation-duration: 0.3s;
+    animation-fill-mode:forwards;
+
 }
 .headlinks{
     padding-right: 1.5%; 
@@ -95,9 +98,11 @@ img, video{
 .headlinks:hover{
     border: solid 4px;
     border-radius: 10px;
-    background-color: rgb(40, 37, 40);
-    border-color: rgba(139, 0, 139, 0);
     color: white;
+    animation-name: hoverBorder;
+    animation-duration: 0.3s;
+    animation-fill-mode:forwards;
+    border-color: rgba(139, 0, 139, 0);
 }
 .pagination a{
     color: white;
@@ -105,23 +110,20 @@ img, video{
     padding: 8px 15px;
     display: inline-block
 }
-.pagination a.active{
-    background-color: rgb(54, 51, 54);
-    font-weight: bold;
-    border-radius: 5px;
-}
 .pagination a:hover:not(.active){
-    background-color: rgb(40, 37, 40);
-    border-radius: 5px;
-}
-.pagination a.active:hover{
-    background-color: rgb(72, 67, 72);
-    font-weight: bold;
-    border-radius: 5px;
+    border: solid 4px;
+    border-radius: 10px;
+    animation-name: hoverBorder;
+    animation-duration: 0.3s;
+    animation-fill-mode:forwards;
+    border-color: rgba(139, 0, 139, 0);
 }
 .gallery{
     display: inline-block;
-    border: 2px solid white;
+    border: solid 4px;
+    border-radius: 10px;
+    background-color: rgb(40, 37, 40);
+    border-color: rgba(139, 0, 139, 0);
     margin: 5px;
     width: 350px;
 }
@@ -131,7 +133,12 @@ img, video{
     color:white;
 }
 .gallery:hover{
-    border: 2px solid grey;
+    border: solid 4px;
+    border-radius: 10px;
+    animation-name: hoverActiveBorder;
+    animation-duration: 0.3s;
+    animation-fill-mode:forwards;
+    border-color: rgba(139, 0, 139, 0);
 }
 .gallery img{
     width: 100%;
@@ -148,4 +155,10 @@ img, video{
     aside, section, article{
         width:100%;
     }
+}
+@keyframes hoverActiveBorder{
+    100%{background-color:rgb(72, 67, 72);}
+}
+@keyframes hoverBorder{
+    100%{background-color: rgb(40, 37, 40);}
 }
