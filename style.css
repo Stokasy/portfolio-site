@@ -85,9 +85,10 @@ h1, h2, p, pre, label, dd{
     animation-name: hoverActiveBorder;
     animation-duration: 0.3s;
     animation-fill-mode:forwards;
-
 }
 .headlinks{
+    border: solid 4px;
+    border-color: rgba(139, 0, 139, 0);
     padding-right: 1.5%; 
     padding-left: 1.5%;
     text-decoration: none; 
@@ -105,6 +106,8 @@ h1, h2, p, pre, label, dd{
     border-color: rgba(139, 0, 139, 0);
 }
 .pagination a{
+    border: solid 4px;
+    border-color: rgba(139, 0, 139, 0);
     color: white;
     text-decoration: none;
     padding: 8px 15px;
@@ -112,11 +115,11 @@ h1, h2, p, pre, label, dd{
 }
 .pagination a:hover:not(.active){
     border: solid 4px;
+    border-color: rgba(139, 0, 139, 0);
     border-radius: 10px;
     animation-name: hoverBorder;
     animation-duration: 0.3s;
     animation-fill-mode:forwards;
-    border-color: rgba(139, 0, 139, 0);
 }
 .gallery{
     display: inline-block;
