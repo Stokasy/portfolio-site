@@ -42,6 +42,9 @@ h1, h2, p, pre, label, dd{
     color: white;
     width: 50%;
 }
+li{
+    color:white;
+}
 #title{
     text-shadow: 5px 5px 3px darkmagenta;
     font-size: 46px;
@@ -155,8 +158,16 @@ h1, h2, p, pre, label, dd{
     column-gap: 5px;
 }
 @media screen and (max-width:1000px){
-    aside, section, article{
+    section, article{
         width:100%;
+    }
+    aside{
+        position:absolute;
+        right: 75%;
+    }
+    aside2{
+        position:absolute;
+        left: 75%;
     }
 }
 @keyframes hoverActiveBorder{
