@@ -77,17 +77,20 @@ li{
     color: darkmagenta;
     font-weight: bold;
 }
-#active{
+#active, #actGenButton, #actProButton, #actArtButton{
     border: solid 4px;
     border-radius: 10px;
     background-color: rgb(54, 51, 54);
     border-color: rgba(139, 0, 139, 0);
     font-weight: bold;
 }
-#active:hover{
+#active:hover, #actGenButton:hover, #actProButton:hover, #actArtButton:hover{
     animation-name: hoverActiveBorder;
     animation-duration: 0.3s;
     animation-fill-mode:forwards;
+}
+#genPosts a, #proPosts a, #artPosts a{
+    text-decoration: none;
 }
 .headlinks{
     border: solid 4px;
@@ -156,6 +159,27 @@ li{
     justify-content: center;
     margin: 25px;
     column-gap: 5px;
+}
+.choosePostTopic{
+    width: 600px;
+    height: auto;
+    text-align: left;
+}
+.postTopic{
+    border: solid 4px;
+    border-radius: 10px;
+    background-color: rgba(139, 0, 139, 0);
+    border-color: rgba(139, 0, 139, 0);
+    color: white;
+    font-size: 20px;
+}
+.postTopic:hover{
+    border: solid 4px;
+    border-radius: 10px;
+    animation-name: hoverBorder;
+    animation-duration: 0.3s;
+    animation-fill-mode:forwards;
+    border-color: rgba(139, 0, 139, 0);
 }
 @media screen and (max-width:1000px){
     section, article{

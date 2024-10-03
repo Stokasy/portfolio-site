@@ -44,10 +44,26 @@
                 <p>My name is Stokasy, I am fond of programming and art. This site was made to archive and give more information about myself and the stuff I have  made. </p>
                 <h2>Where to find/contact me</h2>
                 <p>I am active on <a href = "https://www.github.com/stokasy" target="_blank"> Github</a>, <a href = "https://www.twitch.tv/stokasy" target="_blank"> Twitch</a> and Discord (USN: <i>Stokasy</i>), you can also contact me through my email: <a href="mailto:stokasy@tutanota.com">stokasy@tutanota.com</a>
-                <h2>Recent updates</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate iusto ad harum similique molestias tempora, quas sunt in vero id cum officia aperiam eum impedit maxime? Quisquam praesentium numquam animi.</p>
-            </section>
-        </main>
+                <h2>Posts</h2>
+                    <div class="choosePostTopic">
+                        <script src="index.js"></script>
+                        <div align="center">
+                            <button onclick="switchGeneral()" class="postTopic" id="actGenButton">General</button>
+                            <button onclick="switchProgramming()" class="postTopic" id="nonProButton">Programming</button>
+                            <button onclick="switchArt()" class="postTopic" id="nonArtButton">Art</button>
+                        </div>
+                        <ul id="genPosts" style="display: block;">
+                            <li>24 Oct 02 - <a href="" target="_blank">General post placeholder.</a></li>
+                        </ul>
+                        <ul id="proPosts" style="display: none;">
+                            <li>24 Oct 02 - <a href="" target="_blank">Program post placeholder.</a></li>
+                        </ul>
+                        <ul id="artPosts" style="display: none;">
+                            <li>24 Oct 02 - <a href="" target="_blank">Art post placeholder.</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
 
         <!--FOOTER-->
 
