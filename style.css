@@ -54,7 +54,7 @@ li{
 #asideimg{
     padding-left: 20px;
     margin: 0px;
-    width:  380px;
+    width:  350px;
     height: 350px;
 }
 #asideimg2{
@@ -80,74 +80,71 @@ li{
 #active, #actGenButton, #actProButton, #actArtButton{
     border: solid 4px;
     border-radius: 10px;
+    border-color: transparent;
     background-color: rgb(54, 51, 54);
-    border-color: rgba(139, 0, 139, 0);
     font-weight: bold;
 }
 #active:hover, #actGenButton:hover, #actProButton:hover, #actArtButton:hover{
-    animation-name: hoverActiveBorder;
-    animation-duration: 0.3s;
-    animation-fill-mode:forwards;
+    background-color:rgb(72, 67, 72);
 }
 #genPosts a, #proPosts a, #artPosts a{
     text-decoration: none;
 }
 .headlinks{
     border: solid 4px;
-    border-color: rgba(139, 0, 139, 0);
+    border-radius: 10px;
+    border-color: transparent;
+    transition: background-color 0.2s ease;
     padding-right: 1.5%; 
     padding-left: 1.5%;
-    text-decoration: none; 
     padding-bottom: 0.3%;
     padding-top: 0.6%;
+    text-decoration: none; 
     color: white;
 }
 .headlinks:hover{
     border: solid 4px;
     border-radius: 10px;
+    border-color: transparent;
+    background-color:rgb(40, 37, 40);
     color: white;
-    animation-name: hoverBorder;
-    animation-duration: 0.3s;
-    animation-fill-mode:forwards;
-    border-color: rgba(139, 0, 139, 0);
 }
 .pagination a{
     border: solid 4px;
-    border-color: rgba(139, 0, 139, 0);
+    border-radius: 10px;
+    border-color: transparent;
+    transition: background-color 0.2s ease;
+    display: inline-block;
     color: white;
     text-decoration: none;
     padding: 8px 15px;
-    display: inline-block
 }
 .pagination a:hover:not(.active){
     border: solid 4px;
-    border-color: rgba(139, 0, 139, 0);
     border-radius: 10px;
-    animation-name: hoverBorder;
-    animation-duration: 0.3s;
-    animation-fill-mode:forwards;
+    border-color: transparent;
+    background-color:rgb(40, 37, 40);
 }
 .gallery{
-    display: inline-block;
     border: solid 4px;
     border-radius: 10px;
+    border-color: transparent;
     background-color: rgb(40, 37, 40);
-    border-color: rgba(139, 0, 139, 0);
+    transition: background-color 0.2s ease;
+    display: inline-block;
     margin: 5px;
     width: 350px;
+}
+.gallery:hover{
+    border: solid 4px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color:rgb(72, 67, 72);
 }
 .gallery .description{
     padding:  10px;
     text-align: center;
     color:white;
-}
-.gallery:hover{
-    border: solid 4px;
-    border-radius: 10px;
-    animation-name: hoverActiveBorder;
-    animation-duration: 0.3s;
-    animation-fill-mode:forwards;
-    border-color: rgba(139, 0, 139, 0);
 }
 .gallery img{
     width: 100%;
@@ -168,18 +165,17 @@ li{
 .postTopic{
     border: solid 4px;
     border-radius: 10px;
-    background-color: rgba(139, 0, 139, 0);
-    border-color: rgba(139, 0, 139, 0);
+    border-color: transparent;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
     color: white;
     font-size: 20px;
 }
 .postTopic:hover{
     border: solid 4px;
     border-radius: 10px;
-    animation-name: hoverBorder;
-    animation-duration: 0.3s;
-    animation-fill-mode:forwards;
     border-color: rgba(139, 0, 139, 0);
+    background-color:rgb(40, 37, 40);
 }
 @media screen and (max-width:1000px){
     section, article{
@@ -187,16 +183,10 @@ li{
     }
     aside{
         position:absolute;
-        right: 75%;
+        right: 80%;
     }
     aside2{
         position:absolute;
-        left: 75%;
+        left: 80%;
     }
-}
-@keyframes hoverActiveBorder{
-    100%{background-color:rgb(72, 67, 72);}
-}
-@keyframes hoverBorder{
-    100%{background-color: rgb(40, 37, 40);}
 }
